@@ -1,27 +1,29 @@
 package park;
 
-public abstract class Atraction implements IReviewed{
+public abstract class Atraction implements IReviewed {
     private String name;
     private int rating;
 
-    public Atraction(String name){
+    public Atraction(String name) {
         this.name = name;
         this.rating = 0;
     }
 
- @Override
+    @Override
     public int getRating() {
         return rating;
     }
-@Override
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    @Override
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-    public void setRating(int rating) {
-        this.rating = rating;
     }
 }

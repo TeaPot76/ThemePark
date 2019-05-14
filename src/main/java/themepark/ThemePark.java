@@ -29,7 +29,7 @@ public class ThemePark {
         this.tobaccoStall = tobaccoStall;
     }
 
-    public List<IReviewed> getAllReviewed(){
+    public List<IReviewed> getAllReviewed() {
         List<IReviewed> allReviewed = new ArrayList<>();
         allReviewed.add(candyFlossStall);
         allReviewed.add(dodgem);

@@ -19,28 +19,28 @@ public class Visitor {
         return name;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public double getMoney() {
-        return money;
-    }
-
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public void setAge(int age) {
         this.age = age;
     }
 
+    public double getHeight() {
+        return height;
+    }
+
     public void setHeight(double height) {
         this.height = height;
+    }
+
+    public double getMoney() {
+        return money;
     }
 
     public void setMoney(double money) {

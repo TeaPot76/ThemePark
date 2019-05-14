@@ -1,6 +1,6 @@
 package park;
 
-public abstract class Stall implements IReviewed{
+public abstract class Stall implements IReviewed {
     private String name;
     private String ownerName;
     private int parkingSpot;
@@ -12,33 +12,35 @@ public abstract class Stall implements IReviewed{
         this.parkingSpot = parkingSpot;
         this.rating = 0;
     }
-@Override
+
+    @Override
     public String getName() {
         return name;
-    }
-
-    public String getOwnerName() {
-        return ownerName;
-    }
-
-    public int getParkingSpot() {
-        return parkingSpot;
-    }
-@Override
-    public int getRating() {
-        return rating;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
+    public String getOwnerName() {
+        return ownerName;
+    }
+
     public void setOwnerName(String ownerName) {
         this.ownerName = ownerName;
     }
 
+    public int getParkingSpot() {
+        return parkingSpot;
+    }
+
     public void setParkingSpot(int parkingSpot) {
         this.parkingSpot = parkingSpot;
+    }
+
+    @Override
+    public int getRating() {
+        return rating;
     }
 
     public void setRating(int rating) {

@@ -2,7 +2,7 @@ package park;
 
 public class Dodgem extends Atraction {
 
-    public Dodgem(String name){
+    public Dodgem(String name) {
         super(name);
     }
 }

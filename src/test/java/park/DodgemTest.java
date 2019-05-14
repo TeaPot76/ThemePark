@@ -10,15 +10,17 @@ public class DodgemTest {
     private Dodgem dodgem;
 
     @Before
-    public void before(){
-    dodgem = new Dodgem("Small");
-}
+    public void before() {
+        dodgem = new Dodgem("Small");
+    }
+
     @Test
-    public void hasName(){
+    public void hasName() {
         assertEquals("Small", dodgem.getName());
     }
+
     @Test
-    public void setName(){
+    public void setName() {
         dodgem.setName("Big");
         assertEquals("Big", dodgem.getName());
     }

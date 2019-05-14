@@ -9,44 +9,50 @@ public class VisitorTest {
     private Visitor visitor;
 
     @Before
-    public void before(){
+    public void before() {
         visitor = new Visitor("Edwin", 20, 198, 250);
     }
+
     @Test
-    public void hasName(){
+    public void hasName() {
         assertEquals("Edwin", visitor.getName());
     }
+
     @Test
-    public void hasHeight(){
+    public void hasHeight() {
         assertEquals(198.0, visitor.getHeight());
     }
+
     @Test
-    public void hasAge(){
+    public void hasAge() {
         assertEquals(20, visitor.getAge());
     }
+
     @Test
-    public void hasMoney(){
+    public void hasMoney() {
         assertEquals(250.0, visitor.getMoney());
     }
+
     @Test
-    public void setName(){
+    public void setName() {
         visitor.setName("Bill");
         assertEquals("Bill", visitor.getName());
     }
 
     @Test
-    public void setAge(){
+    public void setAge() {
         visitor.setAge(22);
         assertEquals(22, visitor.getAge());
     }
+
     @Test
-    public void setVisitorHeight(){
+    public void setVisitorHeight() {
         visitor.setHeight(197.0);
         assertEquals(197.0, visitor.getHeight());
     }
 
     @Test
-    public void setVisitorMoney(){
+    public void setVisitorMoney() {
         visitor.setMoney(355.0);
         assertEquals(355.0, visitor.getMoney());
     }

@@ -10,15 +10,17 @@ public class ParkTest {
     private Park park;
 
     @Before
-    public void before(){
-    park = new Park("GreenPark");
-}
-    @Test
-    public void hasName(){
-        assertEquals("GreenPArk", park.getName());
+    public void before() {
+        park = new Park("GreenPark");
     }
+
     @Test
-    public void setName(){
+    public void hasName() {
+        assertEquals("GreenPark", park.getName());
+    }
+
+    @Test
+    public void setName() {
         park.setName("Big");
         assertEquals("Big", park.getName());
     }

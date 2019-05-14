@@ -19,7 +19,7 @@ public class ThemeParkTest {
     private TobaccoStall tobaccoStall;
 
     @Before
-    public void before(){
+    public void before() {
         candyFlossStall = new CandyFlossStall("Good", "Dan", 12);
         iceCreamStall = new IceCreamStall("Good", "Dan", 12);
         tobaccoStall = new TobaccoStall("Good", "Dan", 12);
@@ -29,8 +29,9 @@ public class ThemeParkTest {
         rollercoster = new Rollercoster("Great");
         themePark = new ThemePark("Escape", candyFlossStall, dodgem, iceCreamStall, park, playground, rollercoster, tobaccoStall);
     }
+
     @Test
-    public void canGetAllReviewed(){
+    public void canGetAllReviewed() {
         List<IReviewed> expectedList = new ArrayList<>();
         expectedList.add(candyFlossStall);
         expectedList.add(dodgem);
