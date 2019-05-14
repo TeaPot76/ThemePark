@@ -1,5 +1,6 @@
 package themepark;
 
+import People.Visitor;
 import park.*;
 
 import java.util.ArrayList;
@@ -39,5 +40,7 @@ public class ThemePark {
         allReviewed.add(rollercoster);
         allReviewed.add(tobaccoStall);
         return allReviewed;
+    }
+    public void vist(Visitor visitor, Atraction atraction){
     }
 }
