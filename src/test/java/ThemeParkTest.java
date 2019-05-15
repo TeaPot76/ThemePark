@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static junit.framework.TestCase.assertEquals;
+import static junit.framework.TestCase.assertTrue;
 
 public class ThemeParkTest {
     private ThemePark themePark;
@@ -27,20 +28,24 @@ public class ThemeParkTest {
         park = new Park("Great");
         playground = new Playground("Great");
         rollercoster = new Rollercoster("Great");
-        themePark = new ThemePark("Escape", candyFlossStall, dodgem, iceCreamStall, park, playground, rollercoster, tobaccoStall);
-    }
+        ArrayList<IReviewed>attraction = new ArrayList<>();
+        attraction.add(candyFlossStall);
+        attraction.add(iceCreamStall);
+        themePark = new ThemePark(attraction);
+  }
 
     @Test
-    public void canGetAllReviewed() {
-        List<IReviewed> expectedList = new ArrayList<>();
-        expectedList.add(candyFlossStall);
-        expectedList.add(dodgem);
-        expectedList.add(iceCreamStall);
-        expectedList.add(park);
-        expectedList.add(playground);
-        expectedList.add(rollercoster);
-        expectedList.add(tobaccoStall);
+    public void canGetAllReviewed(){
 
-        assertEquals(expectedList, themePark.getAllReviewed());
+////
+//        expectedList.add(dodgem);
+//        expectedList.add(iceCreamStall);
+//        expectedList.add(park);
+//        expectedList.add(playground);
+//        expectedList.add(rollercoster);
+//        expectedList.add(tobaccoStall);
+//       themePark.getAllReviewed(expectedList);
+
+        assertEquals(2, themePark.attractionsSize());
     }
 }
